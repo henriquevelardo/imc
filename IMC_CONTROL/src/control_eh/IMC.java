@@ -8,6 +8,7 @@ package control_eh;
 /**
  * @author Erik Santos Sardinha 
  * @author Henrique Lima Velardo
+ * Repositório GitHub : https://github.com/henriquevelardo/imc
  */
 public class IMC {
     float altura;
