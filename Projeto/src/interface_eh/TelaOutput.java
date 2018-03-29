@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package eh.telas;
+package interface_eh;
 import java.text.NumberFormat;
+import control_eh.IMC;
 /**
  *
  * @author Familia lima
@@ -13,15 +14,18 @@ public class TelaOutput extends javax.swing.JFrame {
     /**
      * Creates new form telaResultado
      */
-    public TelaOutput() {
+    IMC imc;
+    public TelaOutput(IMC imcI) {
         initComponents();
+        this.imc = imcI;
         NumberFormat nf = NumberFormat.getInstance();
         nf.setMaximumFractionDigits(2);
-        String resultIMC = "calculo";
-        String mensagemIMC = "Mensagem";
+        String resultIMC = String.valueOf(imc.Calculo());
+        String mensagemIMC = imc.Mensagem();
         imcResult.setText(resultIMC);
         mensagem.setText(mensagemIMC);
     }
+    private TelaOutput (){}
 
     /**
      * This method is called from within the constructor to initialize the form.
