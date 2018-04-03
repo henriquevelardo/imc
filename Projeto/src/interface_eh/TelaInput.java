@@ -157,7 +157,7 @@ public class TelaInput extends javax.swing.JFrame {
                     int pesoC = Integer.parseInt(quilos.getText());
                     boolean sexoC = false;
                     if (feminino.isSelected())
-                        sexoC = true;
+                        sexoC = false;
                     else if (masculino.isSelected())
                         sexoC = false;
                     if (Integer.parseInt(centimetros.getText())>=100 || Integer.parseInt(centimetros.getText())<0){
